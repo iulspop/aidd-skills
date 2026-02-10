@@ -7,13 +7,13 @@ Shared [Claude Code](https://claude.com/claude-code) skills for AI-driven develo
 Install all skills into a project:
 
 ```bash
-npx skills add --yes --agent claude-code iulspop/aidd-skills
+npx skills add iulspop/aidd-skills --yes --agent claude-code
 ```
 
 Install a single skill:
 
 ```bash
-npx skills add --yes --agent claude-code iulspop/aidd-skills/skills/<skill-name>
+npx skills add iulspop/aidd-skills/skills/<skill-name> --yes --agent claude-code
 ```
 
 ## Skills
@@ -34,6 +34,7 @@ npx skills add --yes --agent claude-code iulspop/aidd-skills/skills/<skill-name>
 | `code-review` | PR review with blocking issues vs suggestions |
 | `refactor` | Safe refactoring with tests as safety net |
 | `accessibility` | WCAG 2.1 AA audit with concrete fixes |
+| `security-check` | OWASP-based security audit with severity-ordered findings |
 
 ### Planning & Writing
 
@@ -54,3 +55,10 @@ npx skills add --yes --agent claude-code iulspop/aidd-skills/skills/<skill-name>
 | `name` | Function and variable naming |
 | `debug` | Structured root cause analysis |
 | `svg-to-react` | Convert SVGs to React TypeScript components |
+
+### Framework
+
+| Skill | Use for |
+|---|---|
+| `react-router` | React Router V7 loaders, actions, forms, middleware, error handling |
+| `tailwind` | Tailwind CSS layouts, color schemes, responsive design, className handling |
